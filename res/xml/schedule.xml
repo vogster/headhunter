@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<schedule linked="true">
+    <entry key="fullDay">Полный день</entry>
+    <entry key="shift">Сменный график</entry>
+    <entry key="flexible">Гибкий график</entry>
+    <entry key="remote">Удаленная работа</entry>
+    <entry key="flyInFlyOut">Вахтовый метод</entry>
+</schedule>

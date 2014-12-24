@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<employment linked="true">
+    <entry key="full">Полная занятость</entry>
+    <entry key="part">Частичная занятость</entry>
+    <entry key="project">Проектная работа</entry>
+    <entry key="volunteer">Волонтерство</entry>
+    <entry key="probation">Стажировка</entry>
+</employment>

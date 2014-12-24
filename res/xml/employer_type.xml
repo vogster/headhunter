@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<employer_type linked="true">
+    <entry key="company">Прямой работодатель</entry>
+    <entry key="agency">Кадровое агентство</entry>
+    <entry key="private_recruiter">Частный рекрутер</entry>
+</employer_type>

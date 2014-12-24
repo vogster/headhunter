@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<sort linked="true">
+    <entry key="publication_time">По дате</entry>
+    <entry key="salary_desc">По убыванию зарплаты</entry>
+    <entry key="salary_asc">По возрастанию зарплаты</entry>
+    <entry key="relevance">По соответствию</entry>
+</sort>

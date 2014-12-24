@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<experience linked="true">
+    <entry key="noExperience">Нет опыта</entry>
+    <entry key="between1And3">От 1 года до 3 лет</entry>
+    <entry key="between3And6">От 3 до 6 лет</entry>
+    <entry key="moreThan6">Более 6 лет</entry>
+</experience>

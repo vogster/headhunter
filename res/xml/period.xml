@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<period linked="true">
+    <entry key="30">За месяц</entry>
+    <entry key="7">За неделю</entry>
+    <entry key="3">За 3 днят</entry>
+    <entry key="1">За сутки</entry>
+</period>

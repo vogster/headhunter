@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="2dp"
+              android:orientation="vertical">
+    <TextView
+            android:id="@+id/jobNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="job title"
+            android:textSize="22sp" />
+    <TextView
+            android:id="@+id/areaTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="city"
+            android:textSize="18sp" />
+
+    <LinearLayout
+            android:id="@+id/salaryLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Зарплата:"
+                android:textSize="15sp" />
+        <TextView
+                android:id="@+id/salaryTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/profLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Профобласть:"
+                android:textSize="15sp" />
+        <TextView
+                android:id="@+id/profTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/specLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Специализация:"
+                android:textSize="15sp" />
+        <TextView
+                android:id="@+id/specTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/expLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Опыт работы:"
+                android:textSize="15sp" />
+        <TextView
+                android:id="@+id/expTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/employmentLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Тип занятости:"
+                android:textSize="15sp" />
+        <TextView
+                android:id="@+id/employmentTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/scheduleLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="График работы:"
+                android:textSize="15sp" />
+        <TextView
+                android:id="@+id/scheduleTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/periodLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Время публикации:"
+                android:textSize="15sp" />
+        <TextView
+                android:id="@+id/periodTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/orderByLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Сортировка:"
+                android:textSize="15sp" />
+        <TextView
+                android:id="@+id/orderByTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/outputLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Выводить:"
+                android:textSize="15sp" />
+        <TextView
+                android:id="@+id/outputTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout >

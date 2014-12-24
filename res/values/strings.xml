@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HeadHunter</string>
+
+    <!-- other -->
+    <string name="salary_from">от</string>
+    <string name="salary_to">до</string>
+    <string name="salary_none">з/п не указана</string>
+    <string name="ok">Ок</string>
+    <string name="cancel">Отмена</string>
+
+    <!-- error search -->
+    <string name="non_region">Нет такого региона</string>
+
+    <!-- vacancy -->
+    <string name="vacancy_title">Просмотр вакансии</string>
+    <string name="company_info">Информация о компании</string>
+
+    <!-- vacancies -->
+    <string name="vacancies_title">Результаты поиска</string>
+    <string name="found_vacancies">Найдено % вакансий</string>
+
+    <!-- authorization -->
+    <string name="authorization_title">Авторизация</string>
+
+    <!-- employer -->
+    <string name="employer_vacancies">Вакансии компании</string>
+    <string name="employer_info">Информация о компании</string>
+
+    <!-- Activity Main -->
+    <string-array name="screen_array">
+        <item>Вход</item>
+        <item>Поиск работы</item>
+        <item>История поиска</item>
+        <item>Обратная связь</item>
+    </string-array>
+
+    <string-array name="screen_array_loginned">
+        <item>Поиск работы</item>
+        <item>История поиска</item>
+        <item>Мои резюме</item>
+        <item>Отклики и приглашения</item>
+        <item>Автопоиск</item>
+        <item>Избранные вакансии</item>
+        <item>Обратная связь</item>
+        <item>Выход из кабинета</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- fragment search -->
+    <string name="professional_area">Профессиональная область</string>
+    <string name="professional_any">Любая</string>
+
+    <string name="spec_area">Специализация</string>
+    <string name="spec_any">Любая</string>
+
+    <string name="experience">Опыт работы</string>
+    <string name="experience_any">Не имеет значения</string>
+
+    <string name="employment">Тип занятности</string>
+    <string name="employment_any">Любая</string>
+    
+    <string name="schedule">График работы</string>
+    <string name="schedule_any">Любой</string>
+
+    <string name="publish">Время публикации</string>
+    
+    <string name="sort">Сортировка</string>
+
+    <string name="hide_search">Скрыть в результатах поиска</string>
+    <string name="agency">Вакансии агенств</string>
+    <string name="handicapped">Вакансии, недоступные людям с инвалидностью</string>
+    <string name="non_salary">Вакансии без указанной зарплаты</string>
+
+    <string name="hint_search">Что искать? (должность навыки)</string>
+    <string name="hint_region">Регион (город, страна)</string>
+    <string name="hint_salary">Зарплата</string>
+
+    <!-- fragment history -->
+    <string name="clear_history_btn">Очистить историю</string>
+
+</resources>

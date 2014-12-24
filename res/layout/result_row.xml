@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:orientation="horizontal" android:paddingLeft="5dp"
+              android:paddingRight="5dp" android:paddingBottom="5dp" android:paddingTop="5dp"
+              android:background="@drawable/selector">
+
+    <ImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:id="@+id/imageView" android:layout_marginRight="3dp" android:layout_gravity="center_horizontal"
+            android:layout_alignParentEnd="false" android:layout_alignParentStart="false"
+            android:layout_alignTop="@+id/linearLayout" android:layout_alignBottom="@+id/linearLayout"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView" android:id="@+id/linearLayout"
+            android:layout_toLeftOf="@+id/linearLayout2">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/name" android:textSize="15sp" android:textStyle="bold"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/salary" android:paddingTop="3dp" android:paddingBottom="3dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/corpname"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:id="@+id/linearLayout2"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_alignBottom="@+id/linearLayout" android:gravity="center">
+        <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView2" android:src="@drawable/ic_fav_deactive" android:layout_gravity="right"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/dateCreated" android:paddingTop="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

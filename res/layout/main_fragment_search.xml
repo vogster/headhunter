@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_below="@+id/scrollView"
+                android:layout_centerHorizontal="true" android:paddingRight="15dp" android:paddingLeft="15dp"
+                android:paddingTop="15dp" android:paddingBottom="15dp">
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    >
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/searchText" android:hint="@string/hint_search"/>
+                <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/region"
+                        android:layout_below="@+id/searchText"
+                        android:layout_marginTop="15dp"
+                        android:hint="@string/hint_region"/>
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/salary"
+                        android:layout_below="@+id/region"
+                        android:layout_marginTop="15dp" android:layout_toLeftOf="@+id/currency"
+                        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+                        android:numeric="integer" android:hint="@string/hint_salary"/>
+                <Spinner
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/currency" android:layout_alignParentBottom="false"
+                        android:layout_alignEnd="@+id/region"
+                        android:layout_alignTop="@+id/salary" android:layout_alignBottom="@+id/salary"/>
+            </RelativeLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_marginTop="15dp">
+                <View android:background="@color/separator_gray"
+                      android:layout_width = "fill_parent"
+                      android:layout_height="1dip"
+                      android:layout_centerVertical ="true"
+                      android:layout_alignParentEnd="false"
+                      android:layout_alignTop="@+id/employmentTitle"
+                        />
+
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/proffClickable"
+                        android:clickable="false"
+                        android:background="@drawable/selector"
+                        android:paddingLeft="15dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/professional_area"
+                            android:id="@+id/proffTitle"
+                            android:layout_alignParentEnd="false"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+
+                    <Spinner
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/spinnerProff"
+                            android:gravity="left"
+                            android:clickable="false"
+                            android:paddingBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:layout_below="@+id/proffTitle">
+                    </Spinner>
+
+                </RelativeLayout>
+                <View android:background="@color/separator_gray"
+                      android:layout_width = "fill_parent"
+                      android:layout_height="1dip"
+                      android:layout_centerVertical ="true"
+                      android:layout_alignBottom="@+id/employment"/>
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/specializationsClickable"
+                        android:clickable="true"
+                        android:background="@drawable/selector"
+                        android:paddingLeft="15dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/spec_area"
+                            android:id="@+id/specializationsTitle"
+                            android:layout_alignParentEnd="false"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:textSize="18sp"/>
+                    <Spinner
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/spinnerSpec"
+                            android:gravity="left"
+                            android:clickable="false"
+                            android:paddingBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:layout_below="@+id/specializationsTitle"/>
+
+                </RelativeLayout>
+                <View android:background="@color/separator_gray"
+                      android:layout_width = "fill_parent"
+                      android:layout_height="1dip"
+                      android:layout_centerVertical ="true"
+                      android:layout_alignBottom="@+id/employment"/>
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/experienceClickable"
+                        android:clickable="true"
+                        android:background="@drawable/selector"
+                        android:paddingLeft="15dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/experience"
+                            android:textStyle="bold"
+                            android:id="@+id/experienceTitle"
+                            android:paddingTop="5dp"
+                            android:layout_alignParentEnd="false"
+                            android:textSize="18sp"/>
+                    <Spinner
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/spinnerExperience"
+                            android:gravity="left"
+                            android:clickable="false"
+                            android:paddingBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:layout_below="@+id/experienceTitle"/>
+
+                </RelativeLayout>
+                <View android:background="@color/separator_gray"
+                      android:layout_width = "fill_parent"
+                      android:layout_height="1dip"
+                      android:layout_centerVertical ="true"
+                      android:layout_alignBottom="@+id/employment"/>
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/employmentClickable"
+                        android:clickable="true"
+                        android:background="@drawable/selector" android:paddingLeft="15dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/employment"
+                            android:textStyle="bold"
+                            android:id="@+id/employmentTitle"
+                            android:paddingTop="5dp"
+                            android:layout_alignParentEnd="false"
+                            android:textSize="18sp"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/employment_any"
+                            android:id="@+id/employmentSelected"
+                            android:layout_alignParentEnd="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentRight="false"
+                            android:layout_alignWithParentIfMissing="false"
+                            android:layout_below="@+id/employmentTitle"
+                            android:paddingBottom="5dp"/>
+
+                </RelativeLayout>
+                <View android:background="@color/separator_gray"
+                      android:layout_width = "fill_parent"
+                      android:layout_height="1dip"
+                      android:layout_centerVertical ="true"
+                      android:layout_alignBottom="@+id/employment"/>
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/scheduleClickable"
+                        android:clickable="true"
+                        android:background="@drawable/selector"
+                        android:paddingLeft="15dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/schedule"
+                            android:textStyle="bold"
+                            android:id="@+id/scheduleTitle"
+                            android:paddingTop="5dp"
+                            android:layout_alignParentEnd="false"
+                            android:textSize="18sp"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/schedule_any"
+                            android:id="@+id/scheduleSelected"
+                            android:layout_alignParentEnd="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentRight="false"
+                            android:layout_alignWithParentIfMissing="false"
+                            android:layout_below="@+id/scheduleTitle"
+                            android:paddingBottom="5dp"/>
+
+                </RelativeLayout>
+                <View android:background="@color/separator_gray"
+                      android:layout_width = "fill_parent"
+                      android:layout_height="1dip"
+                      android:layout_centerVertical ="true"
+                      android:layout_alignBottom="@+id/employment"/>
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/periodClickable"
+                        android:clickable="true"
+                        android:background="@drawable/selector"
+                        android:paddingLeft="15dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/publish"
+                            android:textStyle="bold"
+                            android:id="@+id/periodTitle"
+                            android:paddingTop="5dp"
+                            android:layout_alignParentEnd="false"
+                            android:textSize="18sp"/>
+                    <Spinner
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/spinnerPeriod"
+                            android:gravity="left"
+                            android:clickable="false"
+                            android:paddingBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:layout_below="@+id/periodTitle"/>
+
+                </RelativeLayout>
+                <View android:background="@color/separator_gray"
+                      android:layout_width = "fill_parent"
+                      android:layout_height="1dip"
+                      android:layout_centerVertical ="true"
+                      android:layout_alignBottom="@+id/employment"/>
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/orderClickable"
+                        android:clickable="true"
+                        android:background="@drawable/selector"
+                        android:paddingLeft="15dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sort"
+                            android:textStyle="bold"
+                            android:id="@+id/orderTitle"
+                            android:paddingTop="5dp"
+                            android:layout_alignParentEnd="false"
+                            android:textSize="18sp"/>
+                    <Spinner
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/spinnerSort"
+                            android:gravity="left"
+                            android:clickable="false"
+                            android:paddingBottom="5dp"
+                            android:background="@android:color/transparent"
+                            android:layout_below="@+id/orderTitle"/>
+
+                </RelativeLayout>
+                <View android:background="@color/separator_gray"
+                      android:layout_width = "fill_parent"
+                      android:layout_height="1dip"
+                      android:layout_centerVertical ="true"
+                      android:layout_alignBottom="@+id/employment"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                        android:paddingLeft="15dp" android:orientation="vertical">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hide_search"
+                            android:textStyle="bold"
+                            android:id="@+id/hideResult"
+                            android:paddingTop="5dp"
+                            android:layout_alignParentEnd="false"
+                            android:textSize="18sp"/>
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/agency"
+                            android:id="@+id/agencyCheckbox"/>
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/handicapped"
+                            android:id="@+id/handicappedCheckBox"/>
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/non_salary"
+                            android:id="@+id/noSalaryCheckbox"/>
+
+                </LinearLayout>
+                <View android:background="@color/separator_gray"
+                      android:layout_width = "fill_parent"
+                      android:layout_height="1dip"
+                      android:layout_centerVertical ="true"
+                      android:layout_alignBottom="@+id/employment"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

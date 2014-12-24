@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<currency linked="true">
+    <entry key="RUR">руб.</entry>
+    <entry key="AZN">AZN</entry>
+    <entry key="BYR">бел. руб.</entry>
+    <entry key="EUR">EUR</entry>
+    <entry key="KZT">KZT</entry>
+    <entry key="UAH">грн.</entry>
+    <entry key="USD">USD</entry>
+</currency>

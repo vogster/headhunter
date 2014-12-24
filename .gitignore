@@ -1,0 +1,11 @@
+bin
+gen
+out
+.idea
+
+.directory
+
+*.iml
+*.properties
+*.txt
+build.xml
